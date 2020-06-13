@@ -2,12 +2,11 @@
 
 # Basic setup
 sudo apt update
+git config credential.helper store
 
 # ZSH
 sudo apt install -y zsh
 zsh --version
-chsh -s $(which zsh)
-echo $SHELL
 
 # Oh My ZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
