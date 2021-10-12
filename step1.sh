@@ -2,6 +2,7 @@
 
 # Basic setup
 sudo apt update
+sudo apt install -y git curl wget
 git config credential.helper store
 
 # ZSH

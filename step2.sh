@@ -11,10 +11,11 @@ sed -i 's/plugins=(git)/plugins=(git zsh-syntax-highlighting zsh-autosuggestions
 source ~/.zshrc
 
 # NodeJS
-sudo apt update
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt install -y nodejs build-essential
 
-sudo npm install --global trash-cli n
+wget -O- https://raw.githubusercontent.com/glenpike/npm-g_nosudo/master/npm-g-nosudo.sh | sh
+
+npm install --global trash-cli tldr n
 
 echo "Log out then back in for full clean experience"
